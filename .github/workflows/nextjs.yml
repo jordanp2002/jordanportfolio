@@ -80,15 +80,10 @@ jobs:
           cd my-app
           npx next build
 
-      - name: Export Next.js static files
-        run: |
-          cd my-app
-          npx next export
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./my-app/out
+          path: ./my-app/out  # The exported static site is located here
 
   # Deployment job
   deploy:
