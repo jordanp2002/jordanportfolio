@@ -1,0 +1,250 @@
+* {
+}
+:root {
+  --font-geist-sans: 'Geist Sans', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+}
+html, body {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #1C1D25;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1024px;
+  padding: 16px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 4.375rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #9CA3AF;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.about-button,
+.contact-button,
+.project-button {
+  background-color: #FF4141;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+}
+
+.about-button:hover,
+.contact-button:hover,
+.project-button:hover {
+  background-color: #FF5252;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.background-initial {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.background-text {
+  font-size: 50vw;
+  font-weight: bold;
+  opacity: 0.05;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: #9CA3AF;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-link:hover {
+  color: white;
+}
+
+.triangle {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  border: 1px solid #FF69B4;
+  transform: rotate(45deg);
+  opacity: 0.5;
+}
+
+.top-left {
+  top: 10vh;
+  left: 30%;
+}
+
+.bottom-right {
+  bottom: 10vh;
+  right: 30%;
+}
+
+.top-right {
+  top: 33%;
+  right: 20%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #2A2B35;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin: 10px 0 10px 0;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.home-button {
+  background-color: #FF4141;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+}
+
+.home-button:hover {
+  background-color: #FF5252;
+}
+
+.body-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 800px;
+  text-align: left;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 800px;
+  text-align: left;
+}
+
+.contact-info a {
+  color: #FF4141;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-button,
+  .contact-button,
+  .project-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
