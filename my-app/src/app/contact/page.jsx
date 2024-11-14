@@ -17,8 +17,8 @@ export default function Contact() {
                     <h1 className="title">Contact</h1>
                     <p className="subtitle">Get in touch with me</p>
                     <div className="contact-info">
-                        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">your-profile</a></p>
+                        <p>Email: <a href="mailto:jordanpohr@proton.me">jordanpohr@proton.me</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/jordan-pohr/"  target="_blank" rel="noopener noreferrer">your-profile</a></p>
                     </div>
                     <div className="button-container">
                         <button className="home-button" onClick={() => router.push('/')}>
