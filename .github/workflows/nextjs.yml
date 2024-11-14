@@ -59,40 +59,36 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
 
       - name: Restore cache
         uses: actions/cache@v4
         with:
           path: |
-            .next/cache
-          # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          # If source files changed but packages didn't, rebuild from a prior cache.
+            my-app/node_modules
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/my-app/package-lock.json', '**/my-app/yarn.lock') }}-${{ hashFiles('my-app/**/*.js', 'my-app/**/*.ts') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/my-app/package-lock.json', '**/my-app/yarn.lock') }}-
 
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: |
+          cd my-app
+          npm install  # This will install the dependencies inside the my-app directory
 
       - name: Build with Next.js
         run: |
-          cd my-app  # Navigate to the my-app subdirectory
-          ${{ steps.detect-package-manager.outputs.runner }} next build
+          cd my-app
+          npx next build
 
       - name: Export Next.js static files
         run: |
-          cd my-app  # Navigate to the my-app subdirectory
-          ${{ steps.detect-package-manager.outputs.runner }} next export
+          cd my-app
+          npx next export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./my-app/out  # Ensure this is the correct output folder from the export command
+          path: ./my-app/out
 
   # Deployment job
   deploy:
