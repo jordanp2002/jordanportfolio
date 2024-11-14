@@ -18,8 +18,9 @@ export default function About() {
                     <p className="subtitle">Learn more about me</p>
                     <div className="body-text">
                         <p>
+                            My journey into computer science began at around age 15 when I started building computers from scratch. This early experience sparked a fascination with both the hardware and software aspects of technology, giving me a unique perspective on how everything from physical components to code work together. Driven by this passion, I pursued a Computer Science degree at the University of British Columbia, where I’ve developed a solid foundation in programming and systems.
 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            I’m particularly interested in exploring a range of fields within software development and computer science, including AI, Backend Development, Data Science, and Machine Learning. Each of these areas offers exciting challenges and potential for innovation, and I’m motivated to keep growing my skills to contribute meaningfully to projects in these domains. From building robust backends to leveraging machine learning for smarter applications, I’m excited about the diverse opportunities in tech and am eager to continue learning and evolving as a developer.
                         </p>
                     </div>
                     <div className="button-container">
