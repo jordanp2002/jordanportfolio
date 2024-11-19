@@ -15,25 +15,33 @@ export default function Projects() {
                     <h1 className="title">Projects</h1>
                     <p className="subtitle">Showcase of my work</p>
                     <div className="card-container">
-                        <div className="card" onClick={() => router.push('/project1')}>
-                            <img src="/images/project1.jpg" alt="Project 1" className="card-image" />
-                            <h3>Project 1</h3>
-                            <p>Project 1 description</p>
+                        <div className="card">
+                            <a href="https://github.com/ez4papiz1/colligo">
+                                <img src="/images/project1.jpg" alt="Project 1" className="card-image" />
+                                <h3>Colligo</h3>
+                                <p>Real-time chat application</p>
+                            </a>
                         </div>
-                        <div className="card" onClick={() => router.push('/project2')}>
-                            <img src="/images/project2.jpg" alt="Project 2" className="card-image" />
-                            <h3>Project 2</h3>
-                            <p>Project 2 description</p>
+                        <div className="card">
+                            <a href="https://github.com/jordanp2002/TreesRus">
+                                <img src="/images/project2.jpg" alt="Project 2" className="card-image" />
+                                <h3>TreesRus</h3>
+                                <p>Marketplace for trees</p>
+                            </a>
                         </div>
-                        <div className="card" onClick={() => router.push('/project3')}>
-                            <img src="/images/project3.jpg" alt="Project 3" className="card-image" />
-                            <h3>Project 3</h3>
-                            <p>Project 3 description</p>
+                        <div className="card" >
+                            <a href="https://github.com/jordanp2002/Onyx">
+                                <img src="/images/project3.jpg" alt="Project 3" className="card-image" />
+                                <h3>Onyx</h3>
+                                <p>Social media platform</p>
+                            </a>
                         </div>
-                        <div className="card" onClick={() => router.push('/project4')}>
-                            <img src="/images/project4.jpg" alt="Project 4" className="card-image" />
-                            <h3>Project 4</h3>
-                            <p>Project 4 description</p>
+                        <div className="card">
+                            <a href="https://github.com/COSC-499-W2024/capstone-project-team_6_section_002">
+                                <img src="/images/project4.jpg" alt="Project 4" className="card-image" />
+                                <h3>Insurance Policy Comparison Tool</h3>
+                                <p>Tool to compare insurance policies</p>
+                            </a>
                         </div>
                     </div>
                     <div className="button-container">

@@ -166,6 +166,10 @@ html, body {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
+.card a{
+  text-decoration: none;
+  color: white;
+}
 
 .card:hover {
   transform: scale(1.05);
