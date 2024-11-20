@@ -13,34 +13,58 @@ export default function Projects() {
             <main className="main-content">
                 <div className="text-center">
                     <h1 className="title">Projects</h1>
-                    <p className="subtitle">Showcase of my work</p>
                     <div className="card-container">
                         <div className="card">
-                            <a href="https://github.com/ez4papiz1/colligo">
-                                <img src="/images/project1.jpg" alt="Project 1" className="card-image" />
-                                <h3>Colligo</h3>
-                                <p>Real-time chat application</p>
-                            </a>
-                        </div>
-                        <div className="card">
                             <a href="https://github.com/jordanp2002/TreesRus">
-                                <img src="/images/project2.jpg" alt="Project 2" className="card-image" />
+                                <img src="/images/stock.jpg" alt="Project 2" className="card-image" />
                                 <h3>TreesRus</h3>
                                 <p>Marketplace for trees</p>
+                                <div className="tech-stack">
+                                    <img src="https://cdn.simpleicons.org/express/white" alt="Express" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/mysql" alt="MySQL" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/html5" alt="HTML" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/css3" alt="CSS" className="tech-icon" />
+                                </div>
                             </a>
                         </div>
                         <div className="card" >
                             <a href="https://github.com/jordanp2002/Onyx">
-                                <img src="/images/project3.jpg" alt="Project 3" className="card-image" />
+                                <img src="./images/Onyx.png" alt="Project 3" className="card-image" />
                                 <h3>Onyx</h3>
                                 <p>Social media platform</p>
+                                <div className="tech-stack">
+                                    <img src="https://cdn.simpleicons.org/php" alt="PHP" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/html5" alt="HTML" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/css3" alt="CSS" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/mysql" alt="MySQL" className="tech-icon" />
+                                </div>
                             </a>
                         </div>
                         <div className="card">
                             <a href="https://github.com/COSC-499-W2024/capstone-project-team_6_section_002">
-                                <img src="/images/project4.jpg" alt="Project 4" className="card-image" />
+                                <img src="/images/stock.jpg" alt="Project 4" className="card-image" />
                                 <h3>Insurance Policy Comparison Tool</h3>
-                                <p>Tool to compare insurance policies</p>
+                                <p>Tool to compare insurance policies for BFL Canada</p>
+                                <div className="tech-stack">
+                                    <img src="https://cdn.simpleicons.org/python" alt="Python" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/django/white" alt="Django" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/react" alt="React" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/mysql" alt="MySQL" className="tech-icon" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className="card">
+                            <a href="https://github.com/jordanp2002/TechBase">
+                                <img src="/images/stock.jpg" alt="Project 4" className="card-image" />
+                                <h3>Devicefy</h3>
+                                <p>Find and compare tech products</p>
+                                <div className="tech-stack">
+                                    <img src="https://cdn.simpleicons.org/next.js/white" alt="Python" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/react" alt="Django" className="tech-icon" />
+                                    <img src="https://cdn.simpleicons.org/supabase" alt="React" className="tech-icon" />
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -75,7 +99,7 @@ export default function Projects() {
 
             <div className="triangle top-left"></div>
             <div className="triangle bottom-right"></div>
-            <div className="triangle top-right"></div>
+            
         </div>
     );
 }

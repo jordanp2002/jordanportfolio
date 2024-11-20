@@ -19,6 +19,17 @@ export default function Contact() {
                     <div className="contact-info">
                         <p>Email: <a href="mailto:jordanpohr@proton.me">jordanpohr@proton.me</a></p>
                         <p>LinkedIn: <a href="https://www.linkedin.com/in/jordan-pohr/"  target="_blank" rel="noopener noreferrer">Jordan Pohr</a></p>
+                        <p> Copy Of Resume: 
+                            <a 
+                                href="/resume.pdf" 
+                                download
+                                className="resume-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                 Resume
+                            </a>
+                        </p>
                     </div>
                     <div className="button-container">
                         <button className="home-button" onClick={() => router.push('/')}>

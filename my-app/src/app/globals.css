@@ -21,7 +21,6 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-
 .header {
   width: 100%;
   padding: 8px;
@@ -251,4 +250,22 @@ html, body {
     width: 100%;
     max-width: 300px;
   }
+}
+.tech-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.tech-icon:hover {
+    transform: scale(1.2);
+}
+
+.tech-stack {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 8px;
 }
